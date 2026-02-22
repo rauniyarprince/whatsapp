@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
     font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
@@ -57,7 +56,6 @@
 }
 
 .Features > img {
-    /* rotate: -90deg; */
     transform: rotate(-90deg);
     width: 10px;
     height: 15px;
@@ -142,17 +140,12 @@
 .btn:hover{
     cursor: pointer;
 }
-/* .btn:hover{
-    background-color: white;
-    transition: 0.7s;
-} */
 
 
 
 .firstSection{
     
     padding: 20px 40px;
-    /* padding-top: 40px; */
     display: flex;
     flex-direction: column;
     height: 90%;
@@ -163,7 +156,6 @@
     overflow: hidden;
     display: flex;
     justify-content: space-around;
-    /* padding: 0 100px; */
     align-items: center;
     border-radius: 25px;
     background-image: url(whatsApp/MaaBeti.png);
@@ -392,16 +384,14 @@
 }
 .learnMore {
     position: relative;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+
 }
 .learnMore > span {
-    /* width: 300px; */
+   
     display: inline-block;
     padding-top: 40px;
     font-size: 16px;
-    /* text-decoration: 2px underline #25d366 ; */
+
 }
 
 .learnMore::before{
@@ -478,8 +468,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
+
 }
 .up2 > p,.up3 > p,.up4 > p,.up5 > p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -581,13 +570,6 @@ select {
 .media{
     display: none;
 }
-
-
-/* Mobile: 320px–480px
-Tablets: 481px–768px
-Small screens: 769px–1024px
-Large screens: 1025px–1200px
-Extra large screens: 1201px and above */
 
 .footer2{
     display: none;
@@ -826,7 +808,7 @@ Extra large screens: 1201px and above */
     
 }
 
-/* Default desktop */
+
 .navbar {
   display: flex !important;
 }
@@ -835,7 +817,7 @@ Extra large screens: 1201px and above */
   display: none !important;
 }
 
-/* Tablet + Mobile */
+
 @media (max-width: 768px) {
   .navbar {
     display: none !important;
@@ -848,3 +830,170 @@ Extra large screens: 1201px and above */
 
 
 
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  overflow-x: hidden;
+}
+/* for small devices */
+
+@media (max-width: 1200px) {
+
+  .maaBeti {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .leftMsg > h1 {
+    font-size: 3.5em;
+    line-height: 70px;
+  }
+
+  .right {
+    width: 420px;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+  .nav-items {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .left {
+    gap: 40px;
+  }
+
+  .leftMsg > h1 {
+    font-size: 3em;
+    line-height: 60px;
+  }
+
+  .right {
+    width: 380px;
+  }
+
+  .firstBday {
+    gap: 80px;
+  }
+
+  .upper {
+    width: 80%;
+  }
+
+  hr,
+  .lower {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .firstSection {
+    padding: 20px;
+  }
+
+  .maaBeti {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .left {
+    width: 100%;
+    align-items: center;
+  }
+
+  .leftMsg > h1 {
+    font-size: 2.5em;
+    line-height: 50px;
+  }
+
+  .right {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .firstBday {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .secondSection > p {
+    font-size: 1.8em;
+    line-height: 32px;
+  }
+
+  .upper {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .leftMsg > h1 {
+    font-size: 2em;
+    line-height: 40px;
+  }
+
+  .leftMsg > p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .right img {
+    width: 260px !important;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .secondSection > p {
+    font-size: 1.4em;
+  }
+
+  .firstBday {
+    padding: 0 20px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .upper {
+    width: 100%;
+  }
+
+  hr,
+  .lower {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .leftMsg > h1 {
+    font-size: 1.6em;
+  }
+
+  .right img {
+    width: 220px !important;
+  }
+
+}
